@@ -1,0 +1,2 @@
+include 'org.metafacture.flux'
+include 'org.metafacture.flux.ide'

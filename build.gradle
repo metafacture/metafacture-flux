@@ -1,0 +1,40 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'org.xtext:xtext-gradle-plugin:2.0.8'
+	}
+}
+
+subprojects {
+	ext.xtextVersion = '2.23.0'
+	repositories {
+		mavenCentral()
+	}
+	
+	apply plugin: 'java'
+	dependencies {
+		compile platform("org.eclipse.xtext:xtext-dev-bom:${xtextVersion}")
+	}
+
+	apply plugin: 'org.xtext.xtend'
+	apply from: "${rootDir}/gradle/source-layout.gradle"
+	apply plugin: 'eclipse'
+	
+	group = 'org.metafacture.flux'
+	version = '1.0.0-SNAPSHOT'
+	
+  sourceCompatibility = '1.8'
+  targetCompatibility = '1.8'
+	
+	configurations.all {
+		exclude group: 'asm'
+	}
+}
+
+task installServer(type: Copy) {
+	dependsOn(':org.metafacture.flux.ide:installDist')
+    from "org.metafacture.flux.ide/build/install/xtext-server"
+    into "org.metafacture.flux.vsc/xtext-server"
+}
