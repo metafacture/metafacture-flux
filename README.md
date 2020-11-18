@@ -9,7 +9,9 @@ Start extension:
 
 1. Install Visual Studio Code / alternative: VS Codium
 2. Install Node.js (including npm)
-3. Checkout metafacture-flux project
+3. Checkout metafacture-flux project and change directory
+`git clone https://github.com/metafacture/metafacture-flux.git`
+`cd metafacture-flux`
 4. In metafacture-flux execute:
 Unix: `./gradlew installServer`
 Windows: `.\gradlew.bat installServer`
