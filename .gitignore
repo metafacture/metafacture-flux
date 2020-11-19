@@ -3,6 +3,7 @@ bin/
 build/
 generated/
 xtext-gen/
+xtend-gen/
 .project
 .classpath
 out/

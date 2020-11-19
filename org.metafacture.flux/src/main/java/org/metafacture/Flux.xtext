@@ -31,5 +31,5 @@ QualifiedName : ids += ID ('.' ids += ID)* ;
 
 VarRef : '*' ;
 
-terminal ID : 
+terminal ID :
   '^'?('a'..'z'|'A'..'Z'|'_')('a'..'z'|'A'..'Z'|'_'|'0'..'9'|'-')* ;

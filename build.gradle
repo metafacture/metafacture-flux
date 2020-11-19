@@ -7,12 +7,32 @@ buildscript {
 	}
 }
 
+plugins {
+  id 'org.ec4j.editorconfig' version '0.0.3'
+  id 'org.xtext.builder' version '2.0.8'
+}
+
+editorconfig {
+  excludes = [
+    '**/generated',
+    '**/xtext-gen',
+	'**/xtend-gen',
+    '**/bin',
+    '**/.*',
+    'gradlew*',
+    '**/out',
+    '**/node_modules'
+  ]
+}
+
+check.dependsOn(editorconfigCheck)
+
 subprojects {
 	ext.xtextVersion = '2.23.0'
 	repositories {
 		mavenCentral()
 	}
-	
+
 	apply plugin: 'java'
 	dependencies {
 		compile platform("org.eclipse.xtext:xtext-dev-bom:${xtextVersion}")
@@ -21,16 +41,21 @@ subprojects {
 	apply plugin: 'org.xtext.xtend'
 	apply from: "${rootDir}/gradle/source-layout.gradle"
 	apply plugin: 'eclipse'
-	
+    apply plugin: 'checkstyle'
+
 	group = 'org.metafacture.flux'
 	version = '1.0.0-SNAPSHOT'
-	
+
   sourceCompatibility = '1.8'
   targetCompatibility = '1.8'
-	
+
 	configurations.all {
 		exclude group: 'asm'
 	}
+
+  checkstyle {
+    toolVersion '8.30'
+  }
 }
 
 task installServer(type: Copy) {

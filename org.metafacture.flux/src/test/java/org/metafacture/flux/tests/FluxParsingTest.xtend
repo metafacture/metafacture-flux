@@ -17,13 +17,13 @@ import org.metafacture.flux.flux.Metaflow
 class FluxParsingTest {
 	@Inject
 	ParseHelper<Metaflow> parseHelper
-	
+
 	@Test
 	def void loadModel() {
 		val result = parseHelper.parse('''
 		default base = "";
 		default gndsimple = base + "gnd-simplified.dat";
-		
+
 		gnd|
 		open-file|
 		as-lines|
