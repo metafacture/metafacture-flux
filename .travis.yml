@@ -1,0 +1,7 @@
+language: java
+
+before_script:
+  - ./gradlew installServer
+  - cd org.metafacture.flux.vsc/
+  - npm install
+  - cd ..
