@@ -30,6 +30,22 @@
 			<key>end</key>
 			<string>$</string>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>string.quoted.single</string>
+			<key>begin</key>
+			<string>'</string>
+			<key>end</key>
+			<string>'</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>string.quoted.double</string>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>text.flux</string>
