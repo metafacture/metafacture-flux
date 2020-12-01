@@ -46,10 +46,6 @@ Workflow {
 				junitVersion = "5"
 				generateStub = false
 			}
-			webSupport = {
-				generateServlet = false
-				generateJettyLauncher = false
-			}
 			xbaseSupport = {
 				generateXtendInferrer = false
 			}
