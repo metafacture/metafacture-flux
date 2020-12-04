@@ -20,7 +20,8 @@ editorconfig {
     '**/.*',
     'gradlew*',
     '**/out',
-    '**/node_modules'
+    '**/node_modules',
+    '**/*.vsix'
   ]
 }
 
