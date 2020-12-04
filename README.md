@@ -5,7 +5,7 @@ Visual Studio Code / Codium Extension
 ---------------------------
 The project `org.metafacture.flux.vsc` provides an extension for Visual Studio Code / Codium for `flux` via the language server protocol (LSP). In the current state the extension supports auto completion, simple syntax highlighting and auto closing brackets and quotes. This project was created using the [tutorial](https://www.typefox.io/blog/building-a-vs-code-extension-with-xtext-and-the-language-server-protocol) and the corrresponding [example](https://github.com/TypeFox/languageserver-example).
 
-Start extension:
+Build extension:
 
 1. Install Visual Studio Code / alternative: VS Codium
 2. Install Node.js (including npm)
@@ -17,13 +17,15 @@ Unix: `./gradlew installServer`
 Windows: `.\gradlew.bat installServer`
 5. In org.metafacture.flux.vsc execute (tip: if you use windows, install cygwin to execute npm commands):
 `npm install`
+
 To start the extension in development mode, follow A. To create an vsix file to install the extension permanently follow B.
-A:
+
+A) Run in dev mode:
 1. Open org.metafacture.flux.vsc in Visual Studio Code / Codium
 2. Launch vscode extension by pressing F5 (opens new window of Visual Studio Code)
 3. Open new file (file-ending .flux) or open existing flux-file
 
-B:
+B) Install vsix file:
 1. Install vsce: `npm install -g vsce`
 2. In org.metafacture.flux.vsc execute: `vsce package`
 vsce will create a vsix file in the vsc directory which can be used for installation:
