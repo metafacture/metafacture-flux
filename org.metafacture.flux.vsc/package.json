@@ -4,6 +4,7 @@
     "description": "Language Support for Metafacture Flux (Xtext Language Server for Metfacture Flux). For more information, visit https://metafacture.org",
     "version": "0.0.1",
     "publisher": "metafacture",
+    "license": "Apache-2.0",
     "engines": {
         "vscode": "^1.18.0"
     },
