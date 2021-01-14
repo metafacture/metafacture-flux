@@ -1,6 +1,8 @@
 # metafacture-flux
 Xtext-based tool support for the Metafacture Flux language
 
+![Build and Deploy](https://github.com/metafacture/metafacture-flux/workflows/Build%20and%20Deploy/badge.svg)
+
 Visual Studio Code / Codium Extension
 ---------------------------
 The project `org.metafacture.flux.vsc` provides an extension for Visual Studio Code / Codium for `flux` via the language server protocol (LSP). In the current state the extension supports auto completion, simple syntax highlighting and auto closing brackets and quotes. This project was created using the [tutorial](https://www.typefox.io/blog/building-a-vs-code-extension-with-xtext-and-the-language-server-protocol) and the corrresponding [example](https://github.com/TypeFox/languageserver-example).
