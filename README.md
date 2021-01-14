@@ -1,7 +1,7 @@
 # metafacture-flux
 Xtext-based tool support for the Metafacture Flux language
 
-![Build and Deploy](https://github.com/metafacture/metafacture-flux/workflows/Build%20and%20Deploy/badge.svg)
+[![Build and Deploy](https://github.com/metafacture/metafacture-flux/workflows/Build%20and%20Deploy/badge.svg)](https://github.com/metafacture/metafacture-flux/actions?query=workflow%3A%22Build+and+Deploy%22)
 
 Visual Studio Code / Codium Extension
 ---------------------------
