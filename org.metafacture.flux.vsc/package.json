@@ -2,7 +2,7 @@
     "name": "flux",
     "displayName": "flux",
     "description": "Language Support for Metafacture Flux (Xtext Language Server for Metfacture Flux). For more information, visit https://metafacture.org",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "publisher": "metafacture",
     "license": "Apache-2.0",
     "engines": {
