@@ -9,6 +9,9 @@ The project `org.metafacture.flux.vsc` provides an extension for Visual Studio C
 
 Build extension:
 
+> [!IMPORTANT]
+> There is a problem when building the extension on Windows and installing the extension on a Linux system afterwards. In some cases the Xtext Server won't start. So if you want to use the extension not only on Windows, build the extension on a Linux system or on a Linux Subsystem on Windows.
+
 1. Install Visual Studio Code / alternative: VS Codium
 2. Install Node.js (including npm)
 3. Clone metafacture-flux project and change directory
